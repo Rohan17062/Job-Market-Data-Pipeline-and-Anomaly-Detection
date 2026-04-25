@@ -1,6 +1,6 @@
 import sqlite3
 
-conn=sqlite3.connect("jobss.db")
+conn=sqlite3.connect("data/jobss.db")
 cursor = conn.cursor()
 
 cursor.execute("""
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS jobs (
 conn.commit()
 conn.close()
 
-conn=sqlite3.connect("jobss.db")
+conn=sqlite3.connect("data/jobss.db")
 cursor = conn.cursor()
 
 cursor.execute("""
