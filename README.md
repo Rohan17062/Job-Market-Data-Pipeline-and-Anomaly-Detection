@@ -12,9 +12,9 @@
 
 ## 📊 Dashboard Preview
 
-![Overview](screenshots/overview.png)
-![Trends](screenshots/trends.png)
-![Alerts](screenshots/alerts.png)
+<img width="1433" height="722" alt="Hiring Overview" src="https://github.com/user-attachments/assets/ea417c5b-df3f-4c7f-b62f-51eb74867cb8" />
+
+
 
 ---
 
