@@ -1,12 +1,12 @@
-# Job Market Data Pipeline & Anomaly Detection
+# Job Market Data Pipeline & Anomaly Detection System
 
 ## 🔹 Quick Summary
 
-* Simulates **incremental job data ingestion** using batch processing
-* Stores data in **SQLite with ingestion timestamp tracking**
-* Detects **anomalies (job drop/spike)** using percentage-based logic
-* Performs **trend analysis** across roles, industries, experience, and salary
-* Visualizes insights and alerts using an **interactive Power BI dashboard**
+Simulates a real-world data pipeline for job market analytics using incremental batch ingestion  
+Stores and tracks historical data using SQLite with ingestion timestamps  
+Implements anomaly detection to identify sudden spikes/drops in job postings  
+Performs trend analysis across roles, industries, experience levels, and salary  
+Visualizes insights and alerts through an interactive Power BI dashboard 
 
 ---
 
@@ -35,7 +35,9 @@ Instead of analyzing a static dataset, it simulates how job data arrives over ti
 
 As new data is ingested, the system updates its internal state, detects unusual changes, and reflects those updates in a dashboard.
 
-> The system is dynamic — dashboard insights change whenever new data is ingested and refreshed.
+The system is dynamic — dashboard insights change whenever new data is ingested and refreshed.
+This project focuses on building a system that not only analyzes data but continuously monitors how it evolves over
+time — a key requirement in real-world data-driven applications.
 
 ---
 
@@ -56,6 +58,7 @@ There is a need for a system that not only analyzes data but also **monitors how
 * Incremental data ingestion simulation
 * Data pipeline with duplicate handling
 * Timestamp-based tracking of data flow
+* Structured pipeline architecture (ingestion → processing → monitoring → visualization)
 * Anomaly detection (DROP/SPIKE alerts)
 * Multi-dimensional trend analysis
 * Interactive Power BI dashboard
@@ -115,6 +118,7 @@ There is a need for a system that not only analyzes data but also **monitors how
 * **Python** (Pandas, SQLite)
 * **SQL**
 * **Power BI**
+* **Data Pipeline Simulation & Anomaly Detection Logic**
 
 ---
 
@@ -170,12 +174,12 @@ Whenever new data is ingested and the dashboard is refreshed, all insights and a
 
 ## 🎯 Conclusion
 
-This project demonstrates how to move from static data analysis to a **monitoring-based system** that tracks changes over time.
+🎯 Conclusion
 
-It reflects real-world use cases where:
+This project demonstrates how static data analysis can be extended into a monitoring system that tracks changes over time.
 
-* Data pipelines continuously ingest data
-* Systems detect anomalies
-* Dashboards support decision-making
-
+It reflects real-world data workflows where:
+- Data pipelines continuously ingest evolving data  
+- Systems detect anomalies and unusual patterns  
+- Dashboards provide actionable insights for decision-making  
 ---
